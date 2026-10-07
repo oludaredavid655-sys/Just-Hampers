@@ -1,0 +1,14 @@
+{
+  "name": "just-hampers",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node -r dotenv/config server.js"
+  },
+  "engines": {
+    "node": ">=17"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.5"
+  }
+}

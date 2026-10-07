@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff0bf">
+  <meta name="background-color" content="#f7f1e7">
+  <meta name="description" content="Thoughtful corporate gifting, carefully curated and managed for teams, clients and company celebrations.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Corporate Gifting | Just Hampers</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="justhamperlogo.jpeg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="corporate.css">
+  <script defer src="js/preloader.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/corporate-data.js"></script>
+  <script defer src="js/corporate-components.js"></script>
+  <script defer src="js/payment-config.js"></script>
+  <script defer src="js/payment-contracts.js"></script>
+  <script defer src="js/payment-ui.js"></script>
+  <script defer src="js/corporate.js"></script>
+  <script defer src="js/motion.js"></script>
+</head>
+<body class="corporate-body">
+  <a class="skip-link" href="#corporate-main">Skip to corporate gifting</a>
+  <header class="site-header corporate-header">
+    <a class="brand" href="index.html" aria-label="Just Hampers home"><img class="brand-mark" src="justhamperlogo.jpeg" alt="" width="46" height="46"><span class="brand-copy"><strong>JUST HAMPERS</strong><small>Premium, just for You.</small></span></a>
+    <button class="menu-toggle" type="button" aria-label="Open corporate navigation" aria-expanded="false" aria-controls="corporate-navigation"><span></span><span></span></button>
+    <nav class="corporate-navigation" id="corporate-navigation" aria-label="Corporate gifting navigation">
+      <a href="index.html">Home</a><a href="#corporate-benefits">Why corporate</a><a href="#corporate-packages">Packages</a><a href="#quote-builder">Request a quote</a><a href="tracking.html">Track Order</a><a class="corporate-nav-link" href="builder.html">Build a personal hamper <span aria-hidden="true">↗</span></a>
+    </nav>
+    <div class="auth-widget auth-widget-inline" data-auth-root aria-live="polite"></div>
+  </header>
+
+  <main id="corporate-main">
+    <section class="corporate-hero" aria-labelledby="corporate-hero-title">
+      <div class="corporate-hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Considered gifting for business</p>
+        <h1 id="corporate-hero-title">Let Just Hampers handle your gifting while you focus on <em>your business.</em></h1>
+        <p>From staff appreciation to client gifts and corporate celebrations, Just Hampers creates and manages thoughtful gifting experiences at scale.</p>
+        <div class="corporate-hero-actions"><a class="button button-primary" href="#quote-builder">Request a Corporate Quote <span aria-hidden="true">↗</span></a><a class="button button-text" href="#corporate-packages">Explore Corporate Gifting <span aria-hidden="true">↓</span></a></div>
+        <div class="corporate-proofline"><span>01 — 500+</span><span>Thoughtful, at every scale</span></div>
+      </div>
+      <div class="corporate-hero-image"><img src="iyn%20.jpeg" alt="Blue corporate gift set with a flask, notebook and pen" fetchpriority="high"><span class="hero-image-label"><small>A corporate gift, with a personal touch</small><strong>Thoughtful in every detail.</strong></span><span class="hero-image-index">JH / CORPORATE</span></div>
+      <span class="corporate-hero-seal" aria-hidden="true">GIFTING<br>THOUGHTFULLY<br><i>✳</i></span>
+    </section>
+
+    <section class="corporate-benefits-section" id="corporate-benefits" aria-labelledby="benefits-title">
+      <div class="corporate-section-inner">
+        <div class="corporate-section-heading"><div><p class="eyebrow">A better way to show up</p><h2 id="benefits-title">Good gifting.<br><em>Well looked after.</em></h2></div><p>From the first idea to the last delivery detail, your campaign gets thoughtful attention.</p></div>
+        <div class="corporate-benefit-grid" id="corporate-benefit-grid"></div>
+      </div>
+    </section>
+
+    <section class="corporate-packages-section" id="corporate-packages" aria-labelledby="packages-title">
+      <div class="corporate-section-inner">
+        <div class="corporate-section-heading"><div><p class="eyebrow">A starting point, not a limit</p><h2 id="packages-title">Made for your <em>kind of occasion.</em></h2></div><p>Choose a direction to begin. Every corporate package is a configurable brief, not a fixed product or price.</p></div>
+        <div class="corporate-package-grid" id="corporate-package-grid"></div>
+      </div>
+    </section>
+
+    <section class="corporate-quote-section" id="quote-builder" aria-labelledby="quote-title">
+      <div class="corporate-section-inner">
+        <div class="quote-intro"><p class="eyebrow">A thoughtful brief starts here</p><h2 id="quote-title">Tell us about your <em>gifting plans.</em></h2><p>Share a few details and shape the request around your people. Your estimate is a planning guide, not a quotation.</p></div>
+        <nav class="corporate-progress" aria-label="Corporate quote request progress">
+          <div class="corporate-progress-track"><span id="corporate-progress-fill"></span></div>
+          <ol id="corporate-step-list"></ol>
+        </nav>
+        <div class="corporate-wizard-layout">
+          <section class="corporate-wizard-panel" aria-labelledby="corporate-step-title">
+            <div id="corporate-step-content"></div>
+            <p class="corporate-form-error" id="corporate-form-error" role="status" aria-live="polite"></p>
+            <div class="corporate-step-actions"><button class="corporate-back-button" type="button" id="corporate-back"><span aria-hidden="true">←</span> Back</button><span class="corporate-step-counter" id="corporate-step-counter"></span><button class="button button-primary corporate-next-button" type="button" id="corporate-next">Continue <span aria-hidden="true">→</span></button></div>
+          </section>
+          <aside class="corporate-summary" aria-label="Live corporate gifting request summary">
+            <button type="button" class="corporate-summary-toggle" id="corporate-summary-toggle" aria-expanded="false" aria-controls="corporate-summary-content"><span><strong>Request overview</strong><small id="corporate-mobile-summary">Your brief, as it takes shape</small></span><strong id="corporate-mobile-estimate">—</strong><span class="summary-chevron" aria-hidden="true">⌃</span></button>
+            <div class="corporate-summary-content" id="corporate-summary-content"></div>
+          </aside>
+        </div>
+        <p class="corporate-quote-disclaimer">Planning estimate only. Product availability, customisation, packaging and delivery are not priced or confirmed by this tool.</p>
+        <section class="corporate-draft-result" id="corporate-draft-result" hidden aria-live="polite"></section>
+      </div>
+    </section>
+
+    <section class="corporate-final-cta" aria-labelledby="corporate-cta-title">
+      <div class="corporate-cta-inner"><p class="eyebrow">A considered campaign begins with a conversation</p><h2 id="corporate-cta-title">Planning a Corporate Gifting <em>Campaign?</em></h2><p>Tell us what you need, and we’ll help create a gifting experience tailored to your organisation.</p><a class="button button-light" href="#quote-builder">Request a Corporate Quote <span aria-hidden="true">↗</span></a></div>
+      <span class="corporate-cta-mark" aria-hidden="true">JH<br>✳</span>
+    </section>
+  </main>
+
+  <footer class="corporate-footer"><a class="brand brand-footer" href="index.html"><img class="brand-mark" src="justhamperlogo.jpeg" alt="" width="42" height="42"><span class="brand-copy"><strong>JUST HAMPERS</strong><small>Premium, just for You.</small></span></a><span>Thoughtful gifting for the people behind your business.</span><a href="index.html">Back to Just Hampers <span aria-hidden="true">↗</span></a></footer>
+</body>
+</html>

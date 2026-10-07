@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff0bf">
+  <meta name="background-color" content="#f7f1e7">
+  <meta name="description" content="Design a thoughtful, personal hamper with Just Hampers.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Build Your Own Hamper | Just Hampers</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="justhamperlogo.jpeg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="builder.css">
+  <script defer src="js/preloader.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/builder-data.js"></script>
+  <script defer src="js/builder-components.js"></script>
+  <script defer src="js/payment-config.js"></script>
+  <script defer src="js/payment-contracts.js"></script>
+  <script defer src="js/payment-ui.js"></script>
+  <script defer src="js/builder.js"></script>
+  <script defer src="js/motion.js"></script>
+</head>
+<body class="builder-body">
+  <a class="skip-link" href="#builder-main">Skip to hamper builder</a>
+  <header class="site-header builder-header">
+    <a class="brand" href="index.html" aria-label="Just Hampers home">
+      <img class="brand-mark" src="justhamperlogo.jpeg" alt="" width="46" height="46">
+      <span class="brand-copy"><strong>JUST HAMPERS</strong><small>Premium, just for You.</small></span>
+    </a>
+    <a class="builder-home-link" href="index.html"><span aria-hidden="true">←</span> Back to Just Hampers</a>
+    <div class="auth-widget auth-widget-inline" data-auth-root aria-live="polite"></div>
+  </header>
+
+  <main class="builder-page" id="builder-main">
+    <div class="builder-intro">
+      <p class="eyebrow"><span class="eyebrow-line"></span> A gift, made yours</p>
+      <h1>Build your own <em>hamper.</em></h1>
+      <p>Pick the box, fill it with good things, and add the details that make it theirs.</p>
+    </div>
+
+    <nav class="step-progress" aria-label="Hamper creation steps">
+      <div class="progress-track"><span id="progress-fill"></span></div>
+      <ol id="step-list"></ol>
+    </nav>
+    <p class="builder-header-meta"><a href="tracking.html">Track your order <span aria-hidden="true">↗</span></a></p>
+
+    <div class="builder-layout">
+      <section class="builder-workspace" aria-labelledby="step-title">
+        <div id="step-content"></div>
+        <p class="builder-error" id="builder-error" role="status" aria-live="polite"></p>
+        <div class="builder-actions">
+          <button class="builder-back" type="button" id="back-button"><span aria-hidden="true">←</span> Back</button>
+          <span class="step-counter" id="step-counter"></span>
+          <button class="button button-primary builder-next" type="button" id="next-button">Continue <span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+
+      <aside class="summary-panel" aria-label="Your live hamper summary">
+        <button class="summary-mobile-toggle" type="button" aria-expanded="false" aria-controls="summary-content" id="summary-toggle">
+          <span><strong>Your Hamper</strong><small id="mobile-summary-subtitle">Choose a box to begin</small></span>
+          <span class="mobile-summary-total" id="mobile-summary-total">—</span>
+          <span class="summary-chevron" aria-hidden="true">⌃</span>
+        </button>
+        <div class="summary-content" id="summary-content"></div>
+      </aside>
+    </div>
+
+    <p class="pricing-disclaimer">All product and box prices in this preview are illustrative estimates, not live Just Hampers pricing. Final availability, pricing and delivery costs must be confirmed before ordering.</p>
+
+    <section class="order-confirmation" id="order-confirmation" hidden aria-live="polite"></section>
+  </main>
+
+  <footer class="builder-footer"><a href="index.html">JUST HAMPERS</a><span>Thoughtful gifts, beautifully put together.</span><span>Payment and ordering are not live yet.</span></footer>
+</body>
+</html>

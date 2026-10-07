@@ -1,0 +1,19 @@
+{
+  "name": "Just Hampers",
+  "short_name": "Just Hampers",
+  "description": "Thoughtful gifts, beautifully put together.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f1e7",
+  "theme_color": "#fff0bf",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

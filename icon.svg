@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Just Hampers icon">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7e7b5"/>
+      <stop offset="100%" stop-color="#e3c36d"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#f6efe2"/>
+  <rect x="90" y="118" width="332" height="310" rx="42" fill="url(#bg)"/>
+  <rect x="116" y="148" width="280" height="250" rx="28" fill="#7b1c2d" opacity="0.12"/>
+  <path d="M168 198h176c15 0 28 13 28 28v12H140v-12c0-15 13-28 28-28Z" fill="#7b1c2d"/>
+  <path d="M160 214h192v150c0 26-22 48-48 48H208c-26 0-48-22-48-48V214Z" fill="#7b1c2d" opacity="0.96"/>
+  <path d="M236 214h40v188h-40zm-26-88c0-26 21-48 48-48s48 22 48 48v26h-96v-26Z" fill="#7b1c2d"/>
+  <circle cx="256" cy="298" r="42" fill="#f7e7b5"/>
+  <path d="M256 260v76M220 298h72" stroke="#7b1c2d" stroke-width="12" stroke-linecap="round"/>
+</svg>
